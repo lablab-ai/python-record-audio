@@ -3,8 +3,7 @@ from scipy.io.wavfile import write
 
 def record(duration):
     fs = 44100  # this is the frequency sampling; also: 4999, 64000
-    seconds = duration  # Duration of recording
-    myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
+    myrecording = sd.rec(int(duration * fs), samplerate=fs, channels=2)
     print("Starting: Speak now!")
     sd.wait()  # Wait until recording is finished
     print("recording finished")
