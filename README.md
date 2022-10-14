@@ -1,7 +1,7 @@
 # Python record audio
 How to record microphone audio with pyhton - Code Snippet
 
-```pyhton
+```python
 import sounddevice as sd
 from scipy.io.wavfile import write
 
